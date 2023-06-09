@@ -1,0 +1,28 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "deploy": "firebase deploy --only functions",
+		"start": "firebase emulators:start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^11.6.0"
+  },
+  "firebase": {
+  "functions": {
+    "sendNotification": {
+      "triggers": {
+        "database": {
+          "path": "/eventPublic/{eventId}",
+          "eventType": "write"
+        }
+      }
+    }
+  }
+}
+}

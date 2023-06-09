@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <data>
+        <variable name="viewmodel"
+            type="com.antonin.friendswave.ui.viewModel.EventFragmentViewModel"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:text="@string/add_event_private"
+            android:textSize="26sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#4D7167" />
+
+
+
+        <TextView
+            android:id="@+id/createYourFirstEvent"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:text="Creer ton premier event et invite tes ami(e)s"
+            android:textColor="#FF8A65"
+            android:textSize="20sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_my_event_private"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:text="@string/add_event_public"
+            android:textSize="26sp" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#4D7167" />
+
+
+        <TextView
+            android:id="@+id/createYourFirstEventPublic"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:text="Créer ton 1er event public et élargit ton cercle d'amis"
+            android:textColor="#FF8A65"
+            android:textSize="20sp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_my_event_public"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</layout>

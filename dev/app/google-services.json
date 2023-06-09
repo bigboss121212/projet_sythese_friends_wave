@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "760151737046",
+    "project_id": "friendswave-8e396",
+    "storage_bucket": "friendswave-8e396.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760151737046:android:6539195088d32887663f77",
+        "android_client_info": {
+          "package_name": "com.antonin.friendswave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760151737046-qap12scp9pffde3h5a4u0jpbbt3l1754.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.antonin.friendswave",
+            "certificate_hash": "d9f20ae5640aeedbff43f5ab0b3da2e2672da60b"
+          }
+        },
+        {
+          "client_id": "760151737046-hm50pt5ktovvj6ie7okugio2qlopskje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760151737046-hm50pt5ktovvj6ie7okugio2qlopskje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+   "firebase_url": "https://friendswave-8e396.firebaseio.com",
+  "gcm_defaultSenderId": "760151737046",
+  "google_app_id": "1:760151737046:android:6539195088d32887663f77"
+}

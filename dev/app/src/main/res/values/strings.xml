@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Friends Wave</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="titre_fragment_contact">Ajoutez des contacts et discutez avec eux</string>
+    <string name="titre_fragment_home">HOME</string>
+    <string name="titre_fragment_event">EVENTS</string>
+    <string name="titre_signalement_activity">SIGNALEMENT</string>
+    <string name="titre_rating_activity">EVALUATION</string>
+    <string name="description_profil">DESCRIPTION</string>
+    <string name="warning_signalement_activity">ATTENTION VOUS ETES SUR LE POINT DE SIGNALER UN UTILISATEUR!</string>
+    <string name="suggests_fragment_home">SUGGESTIONS </string>
+    <string name="description_signalement_activity">Quelle est la raison du signalement?</string>
+    <string name="rating_fragment_home">rating</string>
+    <string name="friends_fragment_home">friends</string>
+    <string name="add_event_public">public</string>
+    <string name="add_event_private">privée </string>
+    <string name="add_event_confidential">Confidentialité : </string>
+    <string name="add_event_name">Nom : </string>
+    <string name="add_event_title">My EVENT </string>
+    <string name="add_event_categorie">Catégorie : </string>
+    <string name="add_event_photo">Photo : </string>
+    <string name="add_event_hint_name">nom event</string>
+    <string name="add_event_hint_mail">entrez un courriel valide</string>
+    <string name="add_event_lieu">Lieu : </string>
+    <string name="ville">ville : </string>
+    <string name="add_event_date">Date : </string>
+    <string name="add_event_heure">Heure : </string>
+    <string name="add_event_description">Description : </string>
+    <string name="add_event_nbre_personnes">Nombre de personnes : </string>
+    <string name="add_event_btn_publier">publier </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">Photo</string>
+    <string name="prensentation">presentation</string>
+    <string name="hint_prensentation">ecrivez une presentation</string>
+    <string name="hint_name">votre nom</string>
+    <string name="hint_familyName">votre nom  de famille</string>
+    <string name="hint_pseudo">votre pseudo</string>
+    <string name="hint_ville">votre ville</string>
+    <string name="hint_age">Votre age</string>
+    <string name="hint_mail">Votre mail</string>
+    <string name="pseudoo">Pseudo</string>
+    <string name="prenom">Prenom</string>
+    <string name="langues">Langues</string>
+    <string name="centres_interets">centres d""interets</string>
+    <string name="courriel">e-mail</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">sign up</string>
+    <string name="password">password</string>
+    <string name="register">register</string>
+    <string name="new_user_signup">New User Signup</string>
+    <string name="chat_group">Chat Group</string>
+    <string name="add_event">ajouter un event</string>
+    <string name="add_friend">ajouter un contact</string>
+    <string name="inscrit">inscrit</string>
+    <string name="desinscrit">desinscrit</string>
+
+    <string name="pseudo">pseudo</string>
+
+    <string name="detail_event_nbre_inscrit">nombre inscrits : </string>
+    <string name="detail_event_inscrit">Inscrits : </string>
+    <string name="detail_event_inscription">inscrivez vous</string>
+    <string name="detail_event_infos">Infos :</string>
+    <string name="detail_event_duration">Durée :</string>
+    <string name="age">age :</string>
+    <string name="send">envoyer</string>
+    <string name="activity_event_inscrit">events inscrits</string>
+    <string name="activity_event_perso">mes events</string>
+    <string name="activity_event_confirm">events confirmés</string>
+    <string name="activity_event_pending">events en attente</string>
+
+    <string name="add_contact_texte1">Cliquez sur un des criteres pour trouver des personnes susceptible de partager les mêmes events que vous :</string>
+    <string name="minute">minutes</string>
+
+    <string name="description_event">Faites la meilleure presentation de votre evenement. Une description complete vous permettra d""avoir potentiellement plus de participants </string>
+
+    <string name="activity_manage_my_event_search">ajoutez des participants :</string>
+    <string name="activity_manage_my_event_go_to_chat">Chat Group</string>
+    <string name="activity_manage_my_event_pending_participants">en attente :</string>
+    <string name="activity_manage_my_event_manage">gestion :</string>
+
+    <string name="fragment_notifs_demande_de_suivi">demande d""ami(e)s</string>
+    <string name="fragment_notifs_demande_events">demande de participations a mes events</string>
+    <string name="fragment_notifs_invitations">invitation pour un event</string>
+
+    <string name="rating_participants">Liste des participants</string>
+    <string name="rating_valider">valider</string>
+
+    <string name="recycler_delete">supprimer</string>
+    <string name="add_contact">Faites une nouvelle demande d""ami(e)"</string>
+    <string name="alert_yes">oui</string>
+    <string name="alert_no">non</string>
+    <string name="save">sauvegarder</string>
+    <string name="add">ajouter</string>
+    <string name="adress">adresse</string>
+
+    <string name="education">education :</string>
+    <string name="langue">langue :</string>
+    <string name="delete_friend">supprimer de votre liste d""amis ?</string>
+    <string name="signal_profil">signaler ?</string>
+
+    <string name="by_hoobby">hobby</string>
+    <string name="by_city">ville</string>
+    <string name="by_age">age</string>
+
+    <string name="api_key_google_map">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="id_maps_pereso">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+
+    <string name="activity_group_chat">GROUP CHAT</string>
+    <string name="activity_group_chat_information">INFORMATION</string>
+
+    <!--    categorie :-->
+
+
+    <string-array name="list_categorie">
+
+        <item>Sport et activités physiques</item>
+        <item>Arts et artisanat</item>
+        <item>Musique et concerts</item>
+        <item>Cinéma et films</item>
+        <item>Gastronomie et cuisine</item>
+        <item>Jeux de société et jeux de rôle</item>
+        <item>Science et technologie</item>
+        <item>Voyages et tourisme</item>
+        <item>Théâtre et représentations</item>
+        <item>Danse et spectacles de danse</item>
+        <item>Activités en plein air</item>
+        <item>Activités nautiques</item>
+        <item>Festivals et événements culturels</item>
+        <item>Ateliers et formations</item>
+        <item>Activités pour enfants et familles</item>
+        <item>Vie nocturne et fêtes</item>
+        <item>Conférences et débats</item>
+        <item>Activités caritatives et bénévoles</item>
+        <item>Mode et design</item>
+        <item>Spectacles de cirque et acrobaties</item>
+
+    </string-array>
+
+
+    <string-array name="list_categorie_strategy">
+        <item>Categorie</item>
+        <item>(km) Autour de toi</item>
+        <item>Nom</item>
+    </string-array>
+
+
+    <string-array name="list_langues">
+        <item>Francais</item>
+        <item>Anglais</item>
+        <item>Espagnol</item>
+        <item>Allemand</item>
+        <item>Chinois</item>
+        <item>Japonais</item>
+        <item>Portugais</item>
+        <item>Italien</item>
+    </string-array>
+
+
+    <string-array name="list_etudes">
+        <item>Self-Made</item>
+        <item>Secondaire</item>
+        <item>Cegep</item>
+        <item>Université</item>
+        <item>Doctorat</item>
+    </string-array>
+
+</resources>

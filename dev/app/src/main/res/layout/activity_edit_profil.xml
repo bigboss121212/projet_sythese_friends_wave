@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewmodel"
+            type="com.antonin.friendswave.ui.viewModel.HomeFragmentViewModel"/>
+
+    </data>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            tools:context=".ui.fragmentMain.HomeFragment">
+
+
+            <ImageView
+                android:id="@+id/picture_cover"
+                android:layout_width="20dp"
+                android:layout_height="17dp"
+                android:elevation="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.977"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.129"
+                app:srcCompat="@drawable/photo"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/picture_profil"
+                android:layout_width="21dp"
+                android:layout_height="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.143"
+                app:srcCompat="@drawable/photo"
+                tools:ignore="ContentDescription" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sendemail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardview_cover"
+                app:layout_constraintEnd_toEndOf="@+id/cardview_cover"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/cardview_cover"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/imgProfil"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearInfoProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardview_cover">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:gravity="center"
+                    android:text="@string/prensentation"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FF4D7167" />
+
+
+                <EditText
+                    android:id="@+id/textAreaInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_mono"
+                    android:gravity="top|start"
+                    android:hint="@string/hint_prensentation"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="@={viewmodel.user_live.desciption}"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:gravity="center"
+                    android:text="@string/detail_event_infos"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FF4D7167" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtPseudoEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_mono"
+                            android:gravity="center"
+                            android:text="@string/pseudoo"
+                            android:textSize="18sp"
+                            tools:ignore="NestedWeights" />
+
+                        <EditText
+                            android:id="@+id/editPseudo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/roboto_mono"
+                            android:importantForAutofill="no"
+                            android:text="@={viewmodel.user_live.nickname}"
+                            tools:ignore="TextFields" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtPrenomEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_mono"
+                            android:gravity="center"
+                            android:text="@string/prenom"
+                            android:textSize="18sp"
+                            tools:ignore="NestedWeights" />
+
+                        <EditText
+                            android:id="@+id/editPrenom"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/roboto_mono"
+                            android:importantForAutofill="no"
+                            android:text="@={viewmodel.user_live.name}"
+                            tools:ignore="TextFields" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtNomEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_mono"
+                            android:gravity="center"
+                            android:text="@string/add_event_name"
+                            android:textSize="18sp"
+                            tools:ignore="NestedWeights" />
+
+                        <EditText
+                            android:id="@+id/editNom"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/roboto_mono"
+                            android:importantForAutofill="no"
+                            android:text="@={viewmodel.user_live.familyName}"
+                            tools:ignore="TextFields" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textAgeEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_mono"
+                            android:gravity="center"
+                            android:text="@string/age"
+                            android:textSize="18sp" />
+
+                        <!--                <EditText-->
+                        <!--                    android:id="@+id/editAge"-->
+                        <!--                    android:layout_width="0dp"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_weight="3"-->
+                        <!--                    android:ems="10"-->
+                        <!--                    android:fontFamily="@font/roboto_mono"-->
+                        <!--                    android:inputType="number"-->
+                        <!--                    android:text="@={``+viewmodel.user_live.age}"-->
+                        <!--                    tools:ignore="Autofill" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/textView13"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/birthday"
+                                tools:ignore="ContentDescription" />
+
+                            <DatePicker
+                                android:id="@+id/datePicker"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:calendarViewShown="false"
+                                android:datePickerMode="spinner"
+                                android:day="@={viewmodel.day}"
+                                android:month="@={viewmodel.month}"
+                                android:onDateChanged="@{(v, year, month, day) -> viewmodel.changeDate(year, month, day)}"
+                                android:year="@={viewmodel.year}" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:id="@+id/txtLieuEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/gnb"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+                        <EditText
+                            android:id="@+id/editLieu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/roboto_mono"
+                            android:text="@={viewmodel.user_live.lieu}"
+                            android:paddingTop="15dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="TextFields" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/txtLanguesEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/langue"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+                        <Spinner
+                            android:id="@+id/spinnerLangues"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:entries="@array/list_langues"
+                            android:onItemSelected="@{viewmodel::onSelectItem}" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/txtEtudesEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/diplome"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+                        <Spinner
+                            android:id="@+id/spinnerEtudes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:entries="@array/list_etudes"
+                            android:onItemSelected="@{viewmodel::onSelectItem2}" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:gravity="center"
+                    android:text="@string/centres_interets"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FF4D7167" />
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/selector_grid_item"
+                    android:choiceMode="multipleChoice"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="16dp" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:onClick="@{(v) -> viewmodel.editProfil(v)}"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#FF4D7167" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

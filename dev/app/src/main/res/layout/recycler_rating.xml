@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable name="viewM"
+            type="com.antonin.friendswave.ui.viewModel.ContactViewModel" />
+
+        <variable name="item"
+            type="com.antonin.friendswave.data.model.User" />
+
+        <variable
+            name="imageUrl"
+            type="String" />
+
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_shape">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="100dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profil_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:onClick='@{(v)-> item.onListItemViewClickListener.onClick(v, item.adapterPosition) }' />
+
+        </androidx.cardview.widget.CardView>
+<!--        app:imageUri="@{item.img}"-->
+
+        <LinearLayout
+            android:id="@+id/layoutChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            >
+
+            <TextView
+                android:id="@+id/nomProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="@{item.name}"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="20sp"
+                android:onClick='@{(v)-> item.onListItemViewClickListener.onClick(v, item.adapterPosition) }'
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</layout>
